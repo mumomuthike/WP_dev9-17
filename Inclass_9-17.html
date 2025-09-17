@@ -51,8 +51,9 @@ h1 {
 }
 
 #game-table {
-    /* border removed as requested */
+    border: 2px solid var(--table-color);
     text-align: center;
+    height: 200px;
     width: 400px;
 }
 
@@ -66,7 +67,14 @@ table caption {
 tr:nth-child(even) {
     background-color: var(--row-bg-color);
 }
-    /* some pizzaz for the page */
+
+/* Table Container Class */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+/* some pizzaz for the page */
 a {
     color: var(--table-color);
     text-decoration: none;
@@ -82,9 +90,9 @@ a:hover {
 
 <h1>Yesterday - Best-Selling Video Games</h1>
 
-
+   <div class="table-container">
     <table id="game-table">
-         Best-Selling Video Games 
+         <caption>Best-Selling Video Games</caption> 
         <tr>
             <th>Title</th>
             <th>Sales</th>
@@ -114,7 +122,8 @@ a:hover {
 
 
 <p>
-      Source: https://en.wikipedia.org/wiki/List_of_best-selling_video_games
+     Source:<a href:"https://en.wikipedia.org/wiki/List_of_best-selling_video_games" >
+      Wikipedia - The list of best-selling video games</a>
 </p>
 
 </body>
